@@ -27,12 +27,12 @@ h1 {
 
 body {
   background-color: var(--cream);
-  display: flex;
-  justify-content: center;
+  display: grid;
+  min-height: 100vh;
+  place-content: center;
 }
 
 .container {
-  height: 900px;
   width: 600px;
   display: flex;
   justify-content: center;
@@ -97,7 +97,6 @@ button:hover {
 @media screen and (max-width: 375px) {
   .container {
     flex-direction: column;
-    
   }
   .card {
     height: 40%;
@@ -108,7 +107,7 @@ button:hover {
     justify-content: center;
     row-gap: 20px;
     padding: 0 30px;
-    border-radius:0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
   }
   img {
     height: 30%;
